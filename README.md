@@ -18,7 +18,7 @@ Now that we have a docker image built, we can run a container from this image wi
 
     docker run -i --rm --name hw04container -p 8080:80 -v "$PWD/html:/usr/share/nginx/html" hw04:latest
 
-##### -i: makes this container interactable
+##### -i: makes this container interactible, showing us logs of the server in the console that we run the 'run' command in.
 ##### --rm: makes the container autodelete itself on exit
 ##### --name: gives the container a name
 ##### -p: binds our container to a port: [local:server], this means that we are binding the local port of 8080 to the servers port 80
