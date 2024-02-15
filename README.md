@@ -10,9 +10,12 @@ This is the repository for the 4th homework in my Cloud Computing class here at 
 ### Using docker 
 #### Building
 To start, let's build our own custom docker image from the Dockerfile:
+    
     docker build -t hw04:latest .
+
 #### Running
 Now that we have a docker image built, we can run a container from this image with the following command:
+
     docker run -i --rm --name hw04container -p 8080:80 -v "$PWD/html:/usr/share/nginx/html" hw04:latest
 
 ##### -i: makes this container interactable
