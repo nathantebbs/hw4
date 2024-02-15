@@ -11,8 +11,6 @@ This is the repository for the 4th homework in my Cloud Computing class here at 
 To start, let's build our own custom docker image from the Dockerfile:
     
     docker build -t hw04:latest .
-
----
 ### Running
 Now that we have a docker image built, we can run a container from this image with the following command:
 
@@ -24,4 +22,9 @@ Now that we have a docker image built, we can run a container from this image wi
 - --name: gives the container a name
 - -p: binds our container to a port: [local:server], this means that we are binding the local port of 8080 to the servers port 80
 - -v: mounts the html/ directory to the directory where nginx looks for website files. Making our files display instead of nginx's default greeting screen.
-
+---
+## Extras
+### File structure
+- All of the actually important files are located in the NETID-hw04/ directory. The zips are for starting and turning in the assignment. All of the website files are in the NETID-hw04/html/ directory.
+### What about the JavaScript?
+- The only JavaScript used in this repo is located at NETID-hw04/html/js/hw04.js
